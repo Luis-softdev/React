@@ -1,5 +1,6 @@
 import './App.css';
 import Brain from "./assets/brain.jpg";
+import ListRender from './components/ListRender';
 import ManageData from './components/ManageData';
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
       <img src={Brain} alt="Cérebro"></img>
 
       <ManageData/>
+      <ListRender/>
     </div>
   );
 }

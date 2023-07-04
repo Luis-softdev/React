@@ -9,3 +9,14 @@ h1{
   color: red;
 }
 
+.red-title {
+  background-color: black;
+  color: red;
+  padding: 15px;
+  border: 5px solid red;
+}
+
+.title {
+  background-color: black;
+  color: white;
+}

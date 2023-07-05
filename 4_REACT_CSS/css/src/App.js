@@ -2,6 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import MyComponent from './Components/MyComponent';
 import { useState } from "react";
+import Title from './Components/Title';
 
 function App() {
   const n = 15
@@ -32,6 +33,8 @@ function App() {
      <h2 className={redTitle ? "red-title" : "title"}>
       Este título vai ter classe dinâmica</h2>
      {/* CSS Modules */}
+     <Title />
+     <h2 className="my_title">Testando</h2>
     </div>
     
   );

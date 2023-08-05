@@ -21,7 +21,7 @@ const Game = ({
       </h3>
       <p>Você ainda tem {guesses} tentativas</p>
       <div className="wordContainer">
-        {letters.map((letter, i)=>
+        {letters.map((letter, i) => (
           guessedLetters.includes(letter) ? (
             <span key={i} className="letter">
               {letter}
@@ -29,7 +29,7 @@ const Game = ({
           ) : (
             <span key={i} className="blankSquare"></span>
           )
-        )}
+          ))}
       </div>
       <div className="letterContainer">
         <p>Tente Adivinhar uma letra da palavra:</p>

@@ -1,5 +1,6 @@
-import './Game.css';
 import { useState, useRef } from 'react';
+import "./Game.css";
+
 
 const Game = ({ 
   verifyLetter, 
@@ -19,9 +20,10 @@ const Game = ({
       e.preventDefault();
 
       verifyLetter(letter);
+       
       setLetter("");
 
-      letterInputRef.current.focus()
+      letterInputRef.current.focus();
     }
 
   return (

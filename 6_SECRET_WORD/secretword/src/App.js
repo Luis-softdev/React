@@ -49,8 +49,8 @@ function App() {
 
   }
   
-  //start the secret word game
-  const startGame = () => {
+    //start the secret word game
+    const startGame = () => {
     //pick word and pink category
     const { word, category } = pickWordAndCategory();
     
@@ -70,16 +70,16 @@ function App() {
     setGameStage(stages[1].name)
   }
   //process the letter input
-  const verifyLetter = (letter) => {
-    const normalizedLetter = letter.toLowerCase()
+    const verifyLetter = (letter) => {
+      const normalizedLetter = letter.toLowerCase()
 
     // check if letter has already been utilized
-    if (
+    if(
       guessedLetters.includes(normalizedLetter) || 
       wrongLetters.includes(normalizedLetter)
     ) {
       return;
-    }
+    };
 
     //push guessed letter or remove a guess
     if(letters.includes(normalizedLetter)){
@@ -96,7 +96,7 @@ function App() {
 
     console.log(guessedLetters);
     console.log(wrongLetters);
-  }
+  };
   //restart the game
   const retry = () => {
     setGameStage(stages[0].name)
